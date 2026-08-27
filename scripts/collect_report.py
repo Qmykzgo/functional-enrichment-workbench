@@ -39,7 +39,8 @@ def main() -> int:
         handle.write("| source | mode | result row |\n| --- | --- | --- |\n")
         for source, header, row in rows:
             mode = "ranked" if "enrichment_score" in header else "ora"
-            handle.write(f"| {source.name} | {mode} | {'; '.join(row).replace('|', '\\|')} |\n")
+            display_row = "; ".join(row).replace("|", "\\|")
+            handle.write(f"| {source.name} | {mode} | {display_row} |\n")
         handle.write("\n## Interpretation guardrails\n\n")
         handle.write("Enrichment is annotation-overlap evidence under a defined model. It is not proof of pathway activation, mechanism, causality, treatment effect, or clinical significance.\n")
     print(f"Wrote {len(rows)} enrichment report rows")
