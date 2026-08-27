@@ -1,0 +1,5 @@
+set_id	description	genes
+GO_FIXTURE_REPAIR	DNA repair-like process	G1,G2,G3,G4
+GO_FIXTURE_STRESS	Cellular stress-like process	G2,G3,G7,G8
+GO_FIXTURE_METABOLIC	Metabolic process-like term	G9,G10,G11,G12
+GO_FIXTURE_PARENT	Broad parent-like term	G1,G2,G3,G4,G5,G6

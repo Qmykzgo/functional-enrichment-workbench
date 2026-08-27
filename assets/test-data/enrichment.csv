@@ -1,0 +1,2 @@
+sample,query_genes,ranked_genes,universe_genes,gene_sets,species,identifier_namespace,gene_set_collection,gene_set_release,method,alpha,min_size
+synthetic_tCDD,assets/test-data/query_genes.txt,assets/test-data/ranked_genes.tsv,assets/test-data/universe_genes.txt,assets/test-data/genesets.tsv,synthetic,GENE_SYMBOL,GO-like-fixture,fixture-1,both,0.05,2
